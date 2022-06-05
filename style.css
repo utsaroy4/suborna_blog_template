@@ -1,0 +1,320 @@
+/*
+Theme Name: Suborna Blog
+Theme URI: https://wordpress.org/themes/utsanews/
+Author: Utsa Roy
+Author URI: UtsaSoftBD.com/
+Description: Utsa News is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Utsa News will make your WordPress look beautiful everywhere.
+Version: 1.0
+Requires at least: 4.4
+Requires PHP: 5.2.4
+License: no licence
+License URI: no licence;
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: Utsa News
+
+*/
+
+/*import font google*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+
+*{
+	font-family: 'Baloo Paaji 2', cursive;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+hr{
+	background-color:red;
+}
+p.show-read-more {
+    font-size: 15px;
+    font-family: arial;
+}
+/* Preloader */
+.preloader {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; 
+  overflow: visible;
+}
+.site-logo{
+	width: 270px;
+    margin-bottom: -16px;
+
+}
+/* End Preloader */
+/*for navbar small*/
+/*######### Started Nav Area#########*/
+.backcolor{
+	background-color: #00000017;
+}
+.top-navbar{
+	height: 25px;
+	background:rgb(120,0,0,0.4);
+	border-radius: 4px;
+	text-align: center;
+}
+.top-navbar a{
+	color:#fff;
+	transition-duration: 1s;
+}
+.top-navbar a:hover{
+	color:red;
+}
+.affex{
+	position: fixed;
+    z-index: 1200;
+    top: 0;
+    margin-left: -15px;
+    background:#fff!important;
+    border-bottom: 4px solid #dc3545;
+}
+nav button.navbar-toggler {
+    float: right;
+    margin-top: -44px;
+    transition-duration: 1s;
+}
+/*hover*/
+nav button.navbar-toggler:active {
+  transform: rotate(180deg);
+  transition:  1ms;
+}
+/*hover*/
+.opened{
+	border-bottom: 3px solid #dc3545;
+	width: 96%;
+}
+.navitem{
+	margin-right: 5px;
+	
+}
+.navitem:hover{
+	border-bottom: 3px solid #dc3545;
+	width: 96%;
+}
+/*######### End Nav Area #########*/
+
+/*trading home post*/
+.trading_home_post{
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+/*########### Slider Area ###################*/
+/*carousel */
+.carousel_Popular{
+	top: 0px;
+    float: left;
+    right: auto;
+    height: 50px;
+    left: 15px;
+}
+
+.carousel-footer-text-box{
+	position: absolute;
+	right: 0%;
+	bottom: 1px;
+	left: 0%;
+	top: 75%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	background:rgba(32, 33, 36, 0.50);
+	transition-duration: 300ms;
+
+}
+
+/*overly iconeimg*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background:rgba(27, 32, 43, 0.47);
+}
+.overly-item:hover .overlay {
+  opacity: 1;
+}
+/*###### End post-section ##########*/
+
+/*###### start post-img ##########*/
+.post-text{
+	position: relative;
+    top: -17px;
+}
+.my-margin{
+	margin-left: -16px;
+}
+.post-img-style{
+	width: 160px;
+	height: 85px;
+}
+
+.post-image-overly{
+	opacity: 0;
+    width: 160px;
+    height: 85px;
+    transition: .3s ease;
+    background: rgba(27, 32, 43, 0.47);
+    position: absolute;
+}
+
+.post-icon{
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px
+}
+.post-icon:hover{
+	color:#DC3545;
+}
+.my-post:hover .post-image-overly{
+	opacity: 10;
+}
+.post-icon-img{
+	width: 80px;
+}
+/*post icon */
+.fa-fire{
+	font-size: 22px;
+	margin-right: 7px;
+}
+.col-6 p{
+	margin-top: 11px;
+}
+/*########### End  post-img #############*/
+
+/*########### social-share #############*/
+.social-share{
+	height: 130px;
+}
+.social-share-fb{
+	float: left;
+	margin-right:7px;
+}
+.social-share-tw{
+	float: left;
+	margin-right:7px;
+}
+.social-share-ins{
+	float: left;
+}
+.social-share-fb img{
+	width:112px;
+	height: 70px;
+	transition-duration:600ms;
+}
+.social-share-fb img:hover{
+	 transform: rotateY(180deg);
+}
+.social-share-tw img{
+	width:112px;
+	height: 70px;
+	transition-duration:600ms;
+}
+.social-share-tw img:hover{
+	 transform: rotateY(180deg);
+}
+.social-share-ins img{
+	width:112px;
+	height: 70px;
+	transition-duration:600ms;
+}
+.social-share-ins img:hover{
+	 transform: rotateY(180deg);
+}
+
+
+/*###### google-ads-side ########*/
+.s300x250{
+	width: 100%;
+	height: 250px;
+}
+.google-ads-side{
+	width: 100%;
+	height: 600px;
+}
+
+/*############# footer ################*/
+.footer{
+	height: 348px;
+}
+.footer-box{
+	
+}
+.footer-image{
+	width: 98%;
+	margin: 2%;
+}
+.tweets{
+	width: 100%;
+}
+.footer-copyright-area{
+	width: 100%;
+	border-bottom: 4px solid #dc3545;
+}
+.copyright-text{
+	width: 280px;
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	float: right;
+	padding: 2px;
+}
+/*########### Customize Scroll Bar ########*/
+.topbtn{
+	display: none;
+}
+.go-to-top{
+	display: flex;
+	position: fixed;
+	top: 92%;
+  	right: 9%;
+
+}
+/*########### post-list-swtich ########*/
+.post-list-swtich{
+    width: 100%;
+}
+.post-list-swtich a{
+}
+/*########### post-list-swtich ########*/
+/*scroll bar edit*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*########### Customize Scroll Bar ########*/

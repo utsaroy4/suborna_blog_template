@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page | Suborna Blog</title>
+	<link rel="shortcut icon" href="image/favicon.ico" />
+	<!-- viewport for responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- fontawesome kits -->
+	<script src="https://kit.fontawesome.com/be62e4cb73.js" crossorigin="anonymous"></script>
+	<!-- bootstarp stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- javascript are start-->
+	<!-- jquery start -->
+	<script src="js/jquery-3.4.1.js"></script>
+	<!-- for navbar  -->
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+	    	var scroll = $(window).scrollTop();
+
+	    	if (scroll >= 600) {
+	        	$(".my-nav").addClass("container affex");
+	        	$(".bg-light").addClass("backcolor");
+	    	} else {
+	        	$(".my-nav").removeClass("container affex ");
+	        	$(".bg-light").removeClass("backcolor ");
+	    	}
+		});
+	</script>
+	<!-- for preloader -->
+	<!-- for goto top -->
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+	    	var scroll = $(window).scrollTop();
+
+	    	if (scroll >=400) {
+	        	$(".topbtn").addClass("go-to-top");
+	    	} 
+	    	else {
+	        	$(".topbtn").removeClass("go-to-top");
+	    	}
+		});
+	</script>
+	<!-- for goto top -->
+	<script src="js/for-preloader.js"></script>
+	<script>
+		setTimeout(function() {
+		  $('#preloader').fadeOut('slow', function() {
+		    $(this).remove();
+		  });
+		}, 2000);
+	</script>
+	<!-- for read more -->
+ 	 <script src="js/jquery-1.12.4.min.js"></script>
+	<!-- read more script -->
+	<script>
+		$(document).ready(function(){
+		    var maxLength = 125;
+		    $(".show-read-more").each(function(){
+		        var myStr = $(this).text();
+		        if($.trim(myStr).length > maxLength){
+		            var newStr = myStr.substring(0, maxLength);
+		            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+		            $(this).empty().html(newStr);
+		            $(this).append(' ');
+		            $(this).append('<span class="more-text">' + removedStr + '</span>');
+		        }
+		    });
+		    $(".read-more").click(function(){
+		        $(this).siblings(".more-text").contents().unwrap();
+		        $(this).remove();
+		    });
+		});
+	</script>
+	<!-- javascript are end-->
+	<style>
+	    .show-read-more .more-text{
+	        display: none;
+	    }
+	</style>
+</head>
+<body>
+	<!-- preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center" id="preloader">
+        <img src="image/preloader.gif" alt="">
+    </div> 
+    <!-- end preloader -->
+	<!-- Start container -->
+	<div class="container">
+		<!-- start navbar area -->
+			<nav class="my-nav navbar-expand-lg navbar-light bg-light">
+			<!-- logo area -->
+			  	<a class="navbar-brand mb-lg-3 mb-sm-0" href="index.html" title=""><img src="image/logo.png" alt="" class="site-logo"></a> <br>
+				<!-- end logo Area -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+			    <i class="fas fa-ellipsis-h text-dark"></i>
+			  </button>
+			  			  
+				<div class="collapse navbar-collapse" id="topnav">
+				    <ul class="navbar-nav mr-auto">
+				    	<li class="nav-item navitem opened">
+							<a  class="nav-link" href="" title=""><b>WORLD</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>BUSINESS</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>POLITICES</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>SPORTS</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>HELTH</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>SCINCE</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>SPOTLIGHT</b>.</a>
+						</li>
+				    </ul>
+				    <form class="form-inline">
+				      <input class="form-control mr-sm-2 text-center" type="search" placeholder="Search." style="width: 77%;">
+				      <button class="btn btn-danger my-2 my-sm-0 mr-sm-2" type="submit" ><i class="fas fa-search"></i></button>
+				    </form>
+			  	</div>
+			</nav>
+			<hr class="bg-danger w-100 d-sm-none d-md-none d-lg-flex mt-lg-0 mt-md-0 mt-sm-2">
+		<!-- End navbar area -->
+		<!--Start Body slider -->
+		<div class="row mt-2">
+			<!-- main slider start -->
+			<div class="col-lg-7">
+				<div class="bg-danger w-25 carousel-caption carousel_Popular"  ><p style="margin-top: -10px;"><b>Popular.</b></p></div>
+				<div id="my-carousel" class="carousel slide mb-3" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item overly-item active">
+					      <img src="image/1.jpg" class="d-block w-100" alt="...">
+					      <!-- overly icon -->
+							<div class="overlay w-100">
+								<p class="icon">
+									<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class=""></a>
+								</p>
+							</div>
+					      <!--End overly icon -->
+					      <div class="carousel-footer-text-box">
+					        <h5>First slide label</h5>
+					      </div>
+					    </div>
+					    <div class="carousel-item overly-item">
+					      <img src="image/2.jpg" class="d-block w-100" alt="...">
+					      <!-- overly icon -->
+							<div class="overlay w-100">
+								<p class="icon">
+									<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class=""></a>
+								</p>
+							</div>
+					      <!--End overly icon -->
+					      <div class="carousel-footer-text-box">
+					        <h5>Second slide label</h5>
+					      </div>
+					    </div>
+					    <div class="carousel-item overly-item">
+					      <img src="image/4.jpg" class="d-block w-100" alt="...">
+					      <!-- overly icon -->
+							<div class="overlay w-100">
+								<p class="icon">
+									<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class=""></a>
+								</p>
+							</div>
+					      <!--End overly icon -->
+					      <div class=" carousel-footer-text-box">
+					        <h5>Third slide label</h5>
+					        
+					      </div>
+					    </div> 
+					    <div class="carousel-item overly-item">
+					      <img src="image/3.jpg" class="d-block w-100" alt="...">
+					      <!-- overly icon -->
+							<div class="overlay w-100">
+								<p class="icon">
+									<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class=""></a>
+								</p>
+							</div>
+					      <!--End overly icon -->
+					      <div class="carousel-caption carousel-footer-text-box">
+					        <h5>Forth slide label</h5>
+					      </div>
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+				</div>
+			</div>
+			<!-- main slider end  -->
+			<!-- Right Side area -->
+			<div class="col-lg-5">
+					<!-- Popular posts -->
+					<div class="card-deck">
+						<div class="card">
+						    <a href="" title="">
+						    	<img src="image/4.jpg" class="card-img-top" alt="...">
+						    </a>
+						    <div class="card-body">
+						      <a href="" title="" class="text-dark">
+						      	<h5 class="card-title">Card title</h5>
+						      </a>
+						      <a href="" title="" class="text-dark">
+						      	<p class="card-text show-read-more">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+						  	  </a>
+						    </div>
+						    <div class="card-footer">
+						      <small class="text-muted">Last updated 3 mins ago</small>
+						    </div>
+						  </div>
+
+						  <div class="card">
+						  	<a href="" title="">
+							    <img src="image/7.jpg" class="card-img-top" alt="...">
+							</a>
+					      <div class="card-body">
+						      <a href="" title="" class="text-dark">
+						      	<h5 class="card-title">Card title</h5>
+						      </a>
+						      <a href="" title="" class="text-dark">
+						      	<p class="card-text show-read-more">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+						  	  </a>
+						    </div>
+						    <div class="card-footer">
+						      <small class="text-muted">Last updated 3 mins ago</small>
+						    </div>
+						</div>
+					</div>
+				<!--END Popular posts -->
+			</div>
+			<!--Right Side area-->
+		</div>
+		<!-- End Boday slider  -->
+	</div>
+	<!--End Container -->
+	<!-- post section started -->
+	<div class="container mt-2">
+		<div class="row">
+			<!--start popular news -->
+			<div class="col-lg-4 mt-2">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>POPULAR NEWS.</h4>
+				</div>
+				<hr class="bg-danger w-100 mt-0">
+				<!-- post area start -->
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/1.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+					<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/2.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/3.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/4.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+				<!-- post area end -->
+			</div> <!--end popular news -->
+			<!--start Hot News -->
+			<div class="col-lg-4 mt-2">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>HOT NEWS.</h4>
+				</div>
+				<hr class="bg-danger w-100 mt-0">
+				<!-- post area start -->
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/5.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+				</article>
+					<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/6.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/7.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/8.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+				<!-- post area end -->
+			</div> <!--end Hot News -->
+			 <!--Start stay Connected -->
+			<div class="col-lg-4 mt-2">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>STAY CONNECTED.</h4>
+				</div>
+				<hr class="bg-danger w-100 mt-0">
+				<!-- post area start -->
+					<div class="social-share">
+						<div class="social-share-fb">
+							<a href="#" title=""><img src="image/fb.png" alt=""></a>
+							<center class="mt-2">2k Fan</center>
+						</div>
+						<div class="social-share-tw">
+							<a href="#" title=""><img src="image/twitter.png" alt=""></a>
+							<center class="mt-2">122k Fan</center>
+						</div>
+						<div class="social-share-ins">
+							<a href="#" title=""><img src="image/instagram.png" alt=""></a>
+							<center class="mt-2">62k Fan</center>
+						</div>
+					</div>
+					<!-- google ads -->
+					<div class="s300x250 mt-3">
+						<center>
+							<img src="image/demo-ads/300x250.png" alt="">
+						</center>
+					</div>
+					<!-- google ads end -->
+					<!-- Our Page -->
+					<div class="mt-5 w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+						<h4>IMPORTANT PAGES..</h4>
+					</div>
+					<hr class="bg-danger w-100 mt-0">
+					<nav class="nav flex-column align-items-center">
+
+					  <a class="nav-link btn btn-danger w-75" href="#">HOME</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">ABOUT US</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">PRIVACY & POLICY</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">DISCLAMER</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">CONTACT US</a>
+					</nav>
+					
+					<!-- google ads -->
+					<div class="s300x250 mt-3">
+						<center>
+							<img src="image/demo-ads/300x250.png" alt="">
+						</center>
+					</div>
+					<!-- google ads end -->
+			</div> <!--end stay Connected -->
+		</div>
+	</div>
+
+	<!-- All Post action -->
+	<!-- post section started -->
+	<div class="container mt-4">
+		<div class="row">
+			<div class="w-75 popular_news_heading" style="margin-left: 13px;border-bottom: 2px solid #c6303e;">
+				<h4>READ CONTINUE .</h4>
+			</div>
+			<hr class="bg-danger mt-0"  style="margin-left: 13px;width: 86%;">
+		<div class="col-lg-4">
+			<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/9.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2021</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>					
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/10.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>				
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/11.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/12.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/13.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/14.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/15.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/16.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/17.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+				</article>
+			</div>
+			<!-- Right Side Post -->
+			<div class="col-lg-4">
+			<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/10.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/6.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/13.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/2.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/3.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/6.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/7.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/8.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+						<hr>
+				<article class="container-fluid">
+					<h2 class="mt-2 font-weight-bold my-margin" style="font-size: 15px;">
+						<a href="" title="" class="text-dark">How To Create Online Class Room In Zoom.Can served  With Long Day?</a>
+					</h2>
+					<div class="row my-post">
+						<img src="image/post/1.jpg" alt="" class="post-img-style">
+						<div class="post-image-overly">
+							<a class="post-icon" href="#" title=""><img src="image/read-more.png" alt="" class="post-icon-img"></a>
+						</div>
+						<div class="col-6">
+							<small class="text-danger font-weight-bold">26 Jun 2020</small>
+							<br>
+							<p class="font-weight-bold"><i class="fas fa-fire text-danger"></i> 4k Hits</p>
+						</div>
+						<p class="show-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p><br><a href="" title=""> READ MORE.</a>
+					</div>
+				</article>
+			</div>
+			<!-- Right Side Post -->
+			<!-- Advitisement area -->
+			<!-- Google Ads-->
+			<div class="col-lg-4">
+				
+				<div class="google-ads-side">
+					<center>
+						<img src="image/demo-ads/300x600.png" alt="">
+					</center>
+				</div>
+				<div class="google-ads-side mt-3 mb-3">
+					<center>
+						<img src="image/demo-ads/300x600.png" alt="">
+					</center>
+				</div>
+				<div class="google-ads-side mt-3 mb-3">
+					<center>
+						<img src="image/demo-ads/300x600.png" alt="">
+					</center>
+				</div>
+				<div class="google-ads-side mt-3 mb-3">
+					<center>
+						<img src="image/demo-ads/300x600.png" alt="">
+					</center>
+				</div>
+			</div>
+			<!-- Advitisement area -->
+			<!-- Google Ads-->
+		</div>
+		<!-- page next & Preview -->
+		<div class="post-list-swtich mt-2 mb-4">
+			<a href="#" title="post" class="btn btn-danger active">1</a>
+			<a href="#" title="post" class="btn btn-danger">2</a>
+			<a href="#" title="post" class="btn btn-danger">3</a>
+			<a href="#" title="post" class="btn btn-danger">4</a>
+			<a href="#" title="post" class="btn btn-danger">5</a>
+			<a href="#" title="post" class="btn btn-danger">6</a>
+			<a href="#" title="post" class="btn btn-danger">7</a>
+		</div>
+		<!-- page next & Preview -->
+	</div>
+	<!-- post section end -->
+
+	<!-- footer start -->
+	<footer class="container footer">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="mt-0 w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>TAG .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<ul class="list-unstyled">
+					<li>#_GOOGLE SITE</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_TEACH SINESS</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_MUSIC & VIDEO</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_LAPTOP </li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_HELTH </li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_SCINCE</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_SPOTLIGHT</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+				</ul>
+			</div>
+			<!--  REcent tweets -->
+			<div class="col-lg-2">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>NAGIVA .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<ul class="list-unstyled">
+					<li><a href="" title="" class="text-dark"><b>WORLD</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>BUSINESS</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>POLITICES</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>SPORTS</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>HELTH</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>SCINCE</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>SPOTLIGHT</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+				</ul>
+			</div>
+			<!-- NAGIVATION . END -->
+			<div class="col-lg-4">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>FICKER IMAGE .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<table class="container-fluid">
+					<tr>
+						<td class="footer-box"> <img src="image/2.jpg" alt="" class="footer-image"> </td>
+						<td class="footer-box"><img src="image/5.jpg" alt="" class="footer-image"></td>
+						<td class="footer-box"><img src="image/3.jpg" alt="" class="footer-image"></td>
+					</tr>
+					<tr>
+						<td class="footer-box"> <img src="image/6.jpg" alt="" class="footer-image"> </td>
+						<td class="footer-box"><img src="image/4.jpg" alt="" class="footer-image"></td>
+						<td class="footer-box"><img src="image/1.jpg" alt="" class="footer-image"></td>
+					</tr>
+					<tr>
+						<td class="footer-box"> <img src="image/6.jpg" alt="" class="footer-image"> </td>
+						<td class="footer-box"><img src="image/4.jpg" alt="" class="footer-image"></td>
+						<td class="footer-box"><img src="image/1.jpg" alt="" class="footer-image"></td>
+					</tr>
+				</table>										
+			</div>
+			<!-- FICKER IMAGE END -->
+			<div class="col-lg-4">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>ABOUT .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<!--  ABOUT  end -->
+	<div class="footer-copyright-area">
+		<div class="copyright-text bg-danger mb-0">
+			AtozWP &copy All Right Reserved 2020
+		</div>
+	</div>
+	</footer>
+	<!--End footer start -->
+	<!-- go to top -->
+	<div class="topbtn">
+		<a href="#top" title="" class="btn btn-danger">TOP</a>
+	</div>
+	<!-- additional script -->
+	<!-- bootstarp script -->=
+    <script src="js/bootstrap.min.js" i></script>
+</body>
+</html>

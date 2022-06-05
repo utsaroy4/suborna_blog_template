@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page | Suborna Blog</title>
+	<link rel="shortcut icon" href="image/favicon.ico" />
+	<!-- viewport for responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- fontawesome kits -->
+	<script src="https://kit.fontawesome.com/be62e4cb73.js" crossorigin="anonymous"></script>
+	<!-- bootstarp stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- javascript are start-->
+	<!-- jquery start -->
+	<script src="js/jquery-3.4.1.js"></script>
+	<!-- for navbar  -->
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+	    	var scroll = $(window).scrollTop();
+
+	    	if (scroll >= 600) {
+	        	$(".my-nav").addClass("container affex");
+	        	$(".bg-light").addClass("backcolor");
+	    	} else {
+	        	$(".my-nav").removeClass("container affex ");
+	        	$(".bg-light").removeClass("backcolor ");
+	    	}
+		});
+	</script>
+	<!-- for preloader -->
+	<!-- for goto top -->
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+	    	var scroll = $(window).scrollTop();
+
+	    	if (scroll >=400) {
+	        	$(".topbtn").addClass("go-to-top");
+	    	} 
+	    	else {
+	        	$(".topbtn").removeClass("go-to-top");
+	    	}
+		});
+	</script>
+	<!-- for goto top -->
+	<script src="js/for-preloader.js"></script>
+	<script>
+		setTimeout(function() {
+		  $('#preloader').fadeOut('slow', function() {
+		    $(this).remove();
+		  });
+		}, 2000);
+	</script>
+	<!-- for read more -->
+ 	 <script src="js/jquery-1.12.4.min.js"></script>
+	<!-- read more script -->
+	<script>
+		$(document).ready(function(){
+		    var maxLength = 125;
+		    $(".show-read-more").each(function(){
+		        var myStr = $(this).text();
+		        if($.trim(myStr).length > maxLength){
+		            var newStr = myStr.substring(0, maxLength);
+		            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+		            $(this).empty().html(newStr);
+		            $(this).append(' ');
+		            $(this).append('<span class="more-text">' + removedStr + '</span>');
+		        }
+		    });
+		    $(".read-more").click(function(){
+		        $(this).siblings(".more-text").contents().unwrap();
+		        $(this).remove();
+		    });
+		});
+	</script>
+	<!-- javascript are end-->
+	<style>
+	    .show-read-more .more-text{
+	        display: none;
+	    }
+	</style>
+</head>
+<body>
+	<!-- preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center" id="preloader">
+        <img src="image/preloader.gif" alt="">
+    </div> 
+    <!-- end preloader -->
+	<!-- Start container -->
+	<div class="container">
+		<!-- start navbar area -->
+			<nav class="my-nav navbar-expand-lg navbar-light bg-light">
+			<!-- logo area -->
+			  	<a class="navbar-brand mb-lg-3 mb-sm-0" href="index.html" title=""><img src="image/logo.png" alt="" class="site-logo"></a> <br>
+				<!-- end logo Area -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+			    <i class="fas fa-ellipsis-h text-dark"></i>
+			  </button>
+			  			  
+				<div class="collapse navbar-collapse" id="topnav">
+				    <ul class="navbar-nav mr-auto">
+				    	<li class="nav-item navitem opened">
+							<a  class="nav-link" href="" title=""><b>WORLD</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>BUSINESS</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>POLITICES</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>SPORTS</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>HELTH</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>SCINCE</b></a>
+						</li>
+						<li class="nav-item navitem">
+							<a  class="nav-link" href="" title=""><b>SPOTLIGHT</b>.</a>
+						</li>
+				    </ul>
+				    <form class="form-inline">
+				      <input class="form-control mr-sm-2 text-center" type="search" placeholder="Search." style="width: 77%;">
+				      <button class="btn btn-danger my-2 my-sm-0 mr-sm-2" type="submit" ><i class="fas fa-search"></i></button>
+				    </form>
+			  	</div>
+			</nav>
+			<hr class="bg-danger w-100 d-sm-none d-md-none d-lg-flex mt-lg-0 mt-md-0 mt-sm-2">
+		<!-- End navbar area -->
+		<!--Start Body slider -->
+	</div>
+	<!--End Container -->
+	<!-- post section started -->
+	<div class="container mt-2">
+		<div class="row">
+			<!--start page area -->
+			<div class="col-lg-8 mt-2">
+				<!-- page header -->
+				<h2>Lorem ipsum dolor sit amet consectetur</h2>
+				<p class="font-weight-bold"><a href="" title="" class="text-danger font-weight-bold">26 Jun 2020</a> <i class="fas fa-fire text-danger"></i> 4k Hits <a href="" title="">Admin</a></p>
+				<!-- end page header -->
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div> <!--end page area -->
+			 <!--Start stay Connected -->
+			<div class="col-lg-4 mt-2">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>STAY CONNECTED.</h4>
+				</div>
+				<hr class="bg-danger w-100 mt-0">
+				<!-- post area start -->
+					<div class="social-share">
+						<div class="social-share-fb">
+							<a href="#" title=""><img src="image/fb.png" alt=""></a>
+							<center class="mt-2">2k Fan</center>
+						</div>
+						<div class="social-share-tw">
+							<a href="#" title=""><img src="image/twitter.png" alt=""></a>
+							<center class="mt-2">122k Fan</center>
+						</div>
+						<div class="social-share-ins">
+							<a href="#" title=""><img src="image/instagram.png" alt=""></a>
+							<center class="mt-2">62k Fan</center>
+						</div>
+					</div>
+					<!-- google ads -->
+					<div class="s300x250 mt-3">
+						<center>
+							<img src="image/demo-ads/300x250.png" alt="">
+						</center>
+					</div>
+					<!-- google ads end -->
+					<!-- Our Page -->
+					<div class="mt-5 w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+						<h4>IMPORTANT PAGES..</h4>
+					</div>
+					<hr class="bg-danger w-100 mt-0">
+					<nav class="nav flex-column align-items-center">
+
+					  <a class="nav-link btn btn-danger w-75" href="#">HOME</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">ABOUT US</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">PRIVACY & POLICY</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">DISCLAMER</a>
+					  <a class="nav-link btn btn-danger mt-2 w-75" href="#">CONTACT US</a>
+					</nav>
+					
+					<!-- google ads -->
+					<div class="s300x250 mt-3">
+						<center>
+							<img src="image/demo-ads/300x250.png" alt="">
+						</center>
+					</div>
+					<!-- google ads end -->
+			</div> <!--end stay Connected -->
+		</div>
+	</div>
+	<!-- All Post action -->
+	<!-- footer start -->
+	<footer class="container footer">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="mt-0 w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>TAG .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<ul class="list-unstyled">
+					<li>#_GOOGLE SITE</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_TEACH SINESS</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_MUSIC & VIDEO</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_LAPTOP </li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_HELTH </li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_SCINCE</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+					<li>#_SPOTLIGHT</li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+				</ul>
+			</div>
+			<!--  REcent tweets -->
+			<div class="col-lg-2">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>NAGIVA .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<ul class="list-unstyled">
+					<li><a href="" title="" class="text-dark"><b>WORLD</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>BUSINESS</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>POLITICES</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>SPORTS</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>HELTH</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>SCINCE</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+
+					<li><a href="" title="" class="text-dark"><b>SPOTLIGHT</b></a></li>
+					<hr class="mt-0 mb-2" style="background-color:#eb8d97">
+				</ul>
+			</div>
+			<!-- NAGIVATION . END -->
+			<div class="col-lg-4">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>FICKER IMAGE .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<table class="container-fluid">
+					<tr>
+						<td class="footer-box"> <img src="image/2.jpg" alt="" class="footer-image"> </td>
+						<td class="footer-box"><img src="image/5.jpg" alt="" class="footer-image"></td>
+						<td class="footer-box"><img src="image/3.jpg" alt="" class="footer-image"></td>
+					</tr>
+					<tr>
+						<td class="footer-box"> <img src="image/6.jpg" alt="" class="footer-image"> </td>
+						<td class="footer-box"><img src="image/4.jpg" alt="" class="footer-image"></td>
+						<td class="footer-box"><img src="image/1.jpg" alt="" class="footer-image"></td>
+					</tr>
+					<tr>
+						<td class="footer-box"> <img src="image/6.jpg" alt="" class="footer-image"> </td>
+						<td class="footer-box"><img src="image/4.jpg" alt="" class="footer-image"></td>
+						<td class="footer-box"><img src="image/1.jpg" alt="" class="footer-image"></td>
+					</tr>
+				</table>										
+			</div>
+			<!-- FICKER IMAGE END -->
+			<div class="col-lg-4">
+				<div class="w-75 popular_news_heading" style="border-bottom: 2px solid #c6303e;">
+					<h4>ABOUT .</h4>
+				</div>
+				<hr class="bg-danger mt-0"  style="width: 86%;">
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<!--  ABOUT  end -->
+	<div class="footer-copyright-area">
+		<div class="copyright-text bg-danger mb-0">
+			Utsa &copy All Right Reserved 2020
+		</div>
+	</div>
+	</footer>
+	<!--End footer start -->
+	<!-- go to top -->
+	<div class="topbtn">
+		<a href="#top" title="" class="btn btn-danger">TOP</a>
+	</div>
+	<!-- additional script -->
+	<!-- bootstarp script -->=
+    <script src="js/bootstrap.min.js" i></script>
+</body>
+</html>
